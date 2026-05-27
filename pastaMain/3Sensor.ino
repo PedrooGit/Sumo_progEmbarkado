@@ -33,7 +33,7 @@ void loop() {
     distancia_2 = sensorUltra(trig_2, echo_2);
     distancia_3 = sensorUltra(trig_3, echo_3);
 
-    Serial.print("=============================");    
+    Serial.println("<-===============================->");    
     Serial.print("Distancia 1: ");
     Serial.println(distancia_1);
     delay(500);
@@ -43,7 +43,6 @@ void loop() {
     Serial.print("Distancia 3: ");
     Serial.println(distancia_3);        
     delay(1000);
-    Serial.print("=============================");    
 }
 
 float sensorUltra(int trig, int echo) {
